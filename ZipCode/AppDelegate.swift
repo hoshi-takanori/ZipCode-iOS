@@ -3,7 +3,7 @@
 //  ZipCode
 //
 //  Created by Hoshi Takanori on 2016/04/24.
-//  Copyright © 2016年 Hoshi Takanori. All rights reserved.
+//  Copyright © 2016 Hoshi Takanori. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -41,6 +40,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
-
