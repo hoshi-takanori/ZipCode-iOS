@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D09662B1CCC48180028A731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09662A1CCC48180028A731 /* AppDelegate.swift */; };
+		8D09662D1CCC48180028A731 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09662C1CCC48180028A731 /* ViewController.swift */; };
+		8D0966301CCC48180028A731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D09662E1CCC48180028A731 /* Main.storyboard */; };
+		8D0966321CCC48180028A731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0966311CCC48180028A731 /* Assets.xcassets */; };
+		8D0966351CCC48180028A731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0966331CCC48180028A731 /* LaunchScreen.storyboard */; };
+		8D0966401CCC48190028A731 /* ZipCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09663F1CCC48190028A731 /* ZipCodeTests.swift */; };
+		8D09664B1CCC48190028A731 /* ZipCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09664A1CCC48190028A731 /* ZipCodeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D09663C1CCC48180028A731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D09661F1CCC48180028A731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D0966261CCC48180028A731;
+			remoteInfo = ZipCode;
+		};
+		8D0966471CCC48190028A731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D09661F1CCC48180028A731 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D0966261CCC48180028A731;
+			remoteInfo = ZipCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D0966271CCC48180028A731 /* ZipCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D09662A1CCC48180028A731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D09662C1CCC48180028A731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D09662F1CCC48180028A731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D0966311CCC48180028A731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D0966341CCC48180028A731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D0966361CCC48180028A731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D09663B1CCC48180028A731 /* ZipCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D09663F1CCC48190028A731 /* ZipCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTests.swift; sourceTree = "<group>"; };
+		8D0966411CCC48190028A731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0966461CCC48190028A731 /* ZipCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D09664A1CCC48190028A731 /* ZipCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeUITests.swift; sourceTree = "<group>"; };
+		8D09664C1CCC48190028A731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0966241CCC48180028A731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0966381CCC48180028A731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0966431CCC48190028A731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D09661E1CCC48180028A731 = {
+			isa = PBXGroup;
+			children = (
+				8D0966291CCC48180028A731 /* ZipCode */,
+				8D09663E1CCC48190028A731 /* ZipCodeTests */,
+				8D0966491CCC48190028A731 /* ZipCodeUITests */,
+				8D0966281CCC48180028A731 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D0966281CCC48180028A731 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0966271CCC48180028A731 /* ZipCode.app */,
+				8D09663B1CCC48180028A731 /* ZipCodeTests.xctest */,
+				8D0966461CCC48190028A731 /* ZipCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D0966291CCC48180028A731 /* ZipCode */ = {
+			isa = PBXGroup;
+			children = (
+				8D09662A1CCC48180028A731 /* AppDelegate.swift */,
+				8D09662C1CCC48180028A731 /* ViewController.swift */,
+				8D09662E1CCC48180028A731 /* Main.storyboard */,
+				8D0966311CCC48180028A731 /* Assets.xcassets */,
+				8D0966331CCC48180028A731 /* LaunchScreen.storyboard */,
+				8D0966361CCC48180028A731 /* Info.plist */,
+			);
+			path = ZipCode;
+			sourceTree = "<group>";
+		};
+		8D09663E1CCC48190028A731 /* ZipCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D09663F1CCC48190028A731 /* ZipCodeTests.swift */,
+				8D0966411CCC48190028A731 /* Info.plist */,
+			);
+			path = ZipCodeTests;
+			sourceTree = "<group>";
+		};
+		8D0966491CCC48190028A731 /* ZipCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D09664A1CCC48190028A731 /* ZipCodeUITests.swift */,
+				8D09664C1CCC48190028A731 /* Info.plist */,
+			);
+			path = ZipCodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0966261CCC48180028A731 /* ZipCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D09664F1CCC48190028A731 /* Build configuration list for PBXNativeTarget "ZipCode" */;
+			buildPhases = (
+				8D0966231CCC48180028A731 /* Sources */,
+				8D0966241CCC48180028A731 /* Frameworks */,
+				8D0966251CCC48180028A731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipCode;
+			productName = ZipCode;
+			productReference = 8D0966271CCC48180028A731 /* ZipCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D09663A1CCC48180028A731 /* ZipCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0966521CCC48190028A731 /* Build configuration list for PBXNativeTarget "ZipCodeTests" */;
+			buildPhases = (
+				8D0966371CCC48180028A731 /* Sources */,
+				8D0966381CCC48180028A731 /* Frameworks */,
+				8D0966391CCC48180028A731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D09663D1CCC48180028A731 /* PBXTargetDependency */,
+			);
+			name = ZipCodeTests;
+			productName = ZipCodeTests;
+			productReference = 8D09663B1CCC48180028A731 /* ZipCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D0966451CCC48190028A731 /* ZipCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0966551CCC48190028A731 /* Build configuration list for PBXNativeTarget "ZipCodeUITests" */;
+			buildPhases = (
+				8D0966421CCC48190028A731 /* Sources */,
+				8D0966431CCC48190028A731 /* Frameworks */,
+				8D0966441CCC48190028A731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D0966481CCC48190028A731 /* PBXTargetDependency */,
+			);
+			name = ZipCodeUITests;
+			productName = ZipCodeUITests;
+			productReference = 8D0966461CCC48190028A731 /* ZipCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D09661F1CCC48180028A731 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Hoshi Takanori";
+				TargetAttributes = {
+					8D0966261CCC48180028A731 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8D09663A1CCC48180028A731 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8D0966261CCC48180028A731;
+					};
+					8D0966451CCC48190028A731 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8D0966261CCC48180028A731;
+					};
+				};
+			};
+			buildConfigurationList = 8D0966221CCC48180028A731 /* Build configuration list for PBXProject "ZipCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D09661E1CCC48180028A731;
+			productRefGroup = 8D0966281CCC48180028A731 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0966261CCC48180028A731 /* ZipCode */,
+				8D09663A1CCC48180028A731 /* ZipCodeTests */,
+				8D0966451CCC48190028A731 /* ZipCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0966251CCC48180028A731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0966351CCC48180028A731 /* LaunchScreen.storyboard in Resources */,
+				8D0966321CCC48180028A731 /* Assets.xcassets in Resources */,
+				8D0966301CCC48180028A731 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0966391CCC48180028A731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0966441CCC48190028A731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0966231CCC48180028A731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D09662D1CCC48180028A731 /* ViewController.swift in Sources */,
+				8D09662B1CCC48180028A731 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0966371CCC48180028A731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0966401CCC48190028A731 /* ZipCodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0966421CCC48190028A731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D09664B1CCC48190028A731 /* ZipCodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D09663D1CCC48180028A731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D0966261CCC48180028A731 /* ZipCode */;
+			targetProxy = 8D09663C1CCC48180028A731 /* PBXContainerItemProxy */;
+		};
+		8D0966481CCC48190028A731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D0966261CCC48180028A731 /* ZipCode */;
+			targetProxy = 8D0966471CCC48190028A731 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D09662E1CCC48180028A731 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D09662F1CCC48180028A731 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D0966331CCC48180028A731 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D0966341CCC48180028A731 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D09664D1CCC48190028A731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D09664E1CCC48190028A731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D0966501CCC48190028A731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZipCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hoshi.ZipCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8D0966511CCC48190028A731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZipCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hoshi.ZipCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8D0966531CCC48190028A731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZipCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hoshi.ZipCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipCode.app/ZipCode";
+			};
+			name = Debug;
+		};
+		8D0966541CCC48190028A731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZipCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hoshi.ZipCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipCode.app/ZipCode";
+			};
+			name = Release;
+		};
+		8D0966561CCC48190028A731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZipCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hoshi.ZipCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZipCode;
+			};
+			name = Debug;
+		};
+		8D0966571CCC48190028A731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZipCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hoshi.ZipCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZipCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D0966221CCC48180028A731 /* Build configuration list for PBXProject "ZipCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D09664D1CCC48190028A731 /* Debug */,
+				8D09664E1CCC48190028A731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D09664F1CCC48190028A731 /* Build configuration list for PBXNativeTarget "ZipCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0966501CCC48190028A731 /* Debug */,
+				8D0966511CCC48190028A731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8D0966521CCC48190028A731 /* Build configuration list for PBXNativeTarget "ZipCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0966531CCC48190028A731 /* Debug */,
+				8D0966541CCC48190028A731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8D0966551CCC48190028A731 /* Build configuration list for PBXNativeTarget "ZipCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0966561CCC48190028A731 /* Debug */,
+				8D0966571CCC48190028A731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D09661F1CCC48180028A731 /* Project object */;
+}
