@@ -26,14 +26,21 @@ class ViewController: UIViewController {
     }
 
     func start() {
-        let request = ZipCodeRequest(zipCode: "100-0001")
+        let alert = UIAlertController(title: "Zip Code", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler(nil)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default) { action in
+            let textField = alert.textFields![0] as UITextField
+            self.query(textField.text ?? "")
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+        presentViewController(alert, animated: true, completion: nil)
+    }
+
+    func query(zipCode: String) {
+        self.textView.text = "zipCode = \(zipCode)"
+        let request = ZipCodeRequest(zipCode: zipCode)
         Session.sendRequest(request) { result in
-            switch result {
-            case .Success(let result):
-                self.textView.text = "Success: \(result)"
-            case .Failure(let error):
-                self.textView.text = "Failure: \(error)"
-            }
+            self.textView.text = "\(self.textView.text)\n\nresult = \(result)"
         }
     }
 
