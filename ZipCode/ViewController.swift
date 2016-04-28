@@ -13,8 +13,14 @@ import RxCocoa
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var reactiveButton: UIButton!
     @IBOutlet weak var textView: UITextView!
+
+    var text: String = "" {
+        didSet {
+            self.textView.text = text
+        }
+    }
 
     let disposeBag = DisposeBag()
 
@@ -22,25 +28,27 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        startButton.addTarget(self, action: #selector(start), forControlEvents: .TouchUpInside)
+        reactiveButton.addTarget(self, action: #selector(start), forControlEvents: .TouchUpInside)
     }
 
-    func start() {
+    @IBAction func start() {
         let alert = UIAlertController(title: "Zip Code", message: nil, preferredStyle: .Alert)
         alert.addTextFieldWithConfigurationHandler(nil)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "OK", style: .Default) { action in
             let textField = alert.textFields![0] as UITextField
             self.query(textField.text ?? "")
         })
-        alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
         presentViewController(alert, animated: true, completion: nil)
     }
 
     func query(zipCode: String) {
-        self.textView.text = "zipCode = \(zipCode)"
+        text = "zipCode = \(zipCode)"
         let request = ZipCodeRequest(zipCode: zipCode)
-        Session.sendRequest(request) { result in
-            self.textView.text = "\(self.textView.text)\n\nresult = \(result)"
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            Session.sendRequest(request) { result in
+                self.text += "\n\nresult = \(result)"
+            }
         }
     }
 

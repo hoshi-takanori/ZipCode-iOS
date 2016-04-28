@@ -24,13 +24,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf9-zK-fm7">
+                                <rect key="frame" x="74" y="84" width="59" height="30"/>
+                                <state key="normal" title="Reactive"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-9N-9rD">
-                                <rect key="frame" x="283" y="84" width="34" height="30"/>
+                                <rect key="frame" x="20" y="84" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="6LO-Y9-WGg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qf9-zK-fm7" firstAttribute="width" secondItem="r9f-9N-9rD" secondAttribute="width" id="1TJ-uF-jzb"/>
+                            <constraint firstItem="r9f-9N-9rD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6cK-Ti-xz1"/>
                             <constraint firstItem="Ou2-ug-OaP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Dz2-kg-eUd"/>
                             <constraint firstItem="Ou2-ug-OaP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LV5-U4-wok"/>
                             <constraint firstItem="r9f-9N-9rD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NxA-kn-kok"/>
@@ -41,19 +50,23 @@
                             <constraint firstItem="Ou2-ug-OaP" firstAttribute="top" secondItem="r9f-9N-9rD" secondAttribute="bottom" constant="20" id="kVN-1Q-Kc1"/>
                             <constraint firstItem="Ou2-ug-OaP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oj1-Nm-fhU"/>
                             <constraint firstItem="r9f-9N-9rD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rbg-gq-9g5"/>
+                            <constraint firstItem="Qf9-zK-fm7" firstAttribute="baseline" secondItem="r9f-9N-9rD" secondAttribute="baseline" id="shH-Pi-kuo"/>
+                            <constraint firstItem="Qf9-zK-fm7" firstAttribute="leading" secondItem="r9f-9N-9rD" secondAttribute="trailing" constant="20" id="xTs-Td-L53"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="NxA-kn-kok"/>
                                 <exclude reference="Dz2-kg-eUd"/>
                                 <exclude reference="LV5-U4-wok"/>
                                 <exclude reference="UUK-CU-hGL"/>
+                                <exclude reference="1TJ-uF-jzb"/>
                                 <exclude reference="ZAb-ml-VAs"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="ZipCode" id="zhE-EG-TF8"/>
                     <connections>
-                        <outlet property="startButton" destination="r9f-9N-9rD" id="nq1-Mt-7aT"/>
+                        <outlet property="reactiveButton" destination="Qf9-zK-fm7" id="E6Q-7n-M2X"/>
                         <outlet property="textView" destination="Ou2-ug-OaP" id="sRL-zQ-Wxk"/>
                     </connections>
                 </viewController>
