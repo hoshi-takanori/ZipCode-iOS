@@ -28,19 +28,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let mainScheduler = MainScheduler.instance
-        let backgroundScheduler = OperationQueueScheduler(operationQueue: NSOperationQueue())
-        let zipCode = "100-0001"
-        let request = ZipCodeRequest(zipCode: zipCode)
         reactiveButton.rx_tap
-            .doOnNext {
+            .flatMap { [unowned self] () -> Observable<String> in
+                let alert = UIAlertController(title: "Zip Code", message: nil, preferredStyle: .Alert)
+                return self.inputFor(alert, ok: "OK", cancel: "Cancel")
+            }
+            .doOnNext { [unowned self] zipCode in
                 self.text = "zipCode = \(zipCode)"
             }
-            .subscribeOn(backgroundScheduler)
-            .flatMap {
-                return Session.rx_response(request)
+            .flatMap { zipCode in
+                return Session.rx_response(ZipCodeRequest(zipCode: zipCode))
             }
-            .observeOn(mainScheduler)
             .subscribeNext { [unowned self] response in
                 self.text += "\n\nresponse = \(response)"
             }
