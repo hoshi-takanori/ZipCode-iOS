@@ -59,10 +59,8 @@ class ViewController: UIViewController {
     func query(zipCode: String) {
         text = "zipCode = \(zipCode)"
         let request = ZipCodeRequest(zipCode: zipCode)
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            Session.sendRequest(request) { result in
-                self.text += "\n\nresult = \(result)"
-            }
+        Session.sendRequest(request) { result in
+            self.text += "\n\nresult = \(result)"
         }
     }
 
