@@ -21,6 +21,7 @@
 		8D0966621CCC527B0028A731 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D09665C1CCC527B0028A731 /* RxCocoa.framework */; };
 		8D0966631CCC527B0028A731 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D09665D1CCC527B0028A731 /* RxSwift.framework */; };
 		8D0966671CCCDB800028A731 /* ZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0966661CCCDB800028A731 /* ZipCode.swift */; };
+		8DF342101CD098CA00ED5EB6 /* RxSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF3420F1CD098CA00ED5EB6 /* RxSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8D09665C1CCC527B0028A731 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		8D09665D1CCC527B0028A731 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		8D0966661CCCDB800028A731 /* ZipCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCode.swift; sourceTree = "<group>"; };
+		8DF3420F1CD098CA00ED5EB6 /* RxSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				8D09662A1CCC48180028A731 /* AppDelegate.swift */,
 				8D09662C1CCC48180028A731 /* ViewController.swift */,
+				8DF3420F1CD098CA00ED5EB6 /* RxSession.swift */,
 				8D0966661CCCDB800028A731 /* ZipCode.swift */,
 				8D09662E1CCC48180028A731 /* Main.storyboard */,
 				8D0966311CCC48180028A731 /* Assets.xcassets */,
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF342101CD098CA00ED5EB6 /* RxSession.swift in Sources */,
 				8D09662D1CCC48180028A731 /* ViewController.swift in Sources */,
 				8D0966671CCCDB800028A731 /* ZipCode.swift in Sources */,
 				8D09662B1CCC48180028A731 /* AppDelegate.swift in Sources */,

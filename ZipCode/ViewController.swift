@@ -28,7 +28,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        reactiveButton.addTarget(self, action: #selector(start), forControlEvents: .TouchUpInside)
+        let mainScheduler = MainScheduler.instance
+        let backgroundScheduler = OperationQueueScheduler(operationQueue: NSOperationQueue())
+        let zipCode = "100-0001"
+        let request = ZipCodeRequest(zipCode: zipCode)
+        reactiveButton.rx_tap
+            .doOnNext {
+                self.text = "zipCode = \(zipCode)"
+            }
+            .subscribeOn(backgroundScheduler)
+            .flatMap {
+                return Session.rx_response(request)
+            }
+            .observeOn(mainScheduler)
+            .subscribeNext { [unowned self] response in
+                self.text += "\n\nresponse = \(response)"
+            }
+            .addDisposableTo(disposeBag)
     }
 
     @IBAction func start() {
